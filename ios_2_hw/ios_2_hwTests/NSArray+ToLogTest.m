@@ -21,11 +21,19 @@
     [super tearDown];
 }
 
-- (void)testThreeElements
+- (void)testCategoryNSArrayToLogWithSomeElements
 {
-    NSArray *array = [[NSArray alloc] initWithObjects:@"A", @"b", @1, @3, nil];
-    NSString *correctString = @"A, b, 1, 3";
+    NSArray *array = [[NSArray alloc] initWithObjects:@"string", @555, @"L", @3, @"t", @5.5, nil];
+    NSString *correctString = @"string, 555, L, 3, t, 5.5";
+    
+    STAssertEqualObjects([array toLog], correctString, @"String should be the same");
+}
 
+- (void)testCategoryNSArrayToLogWithNilElements
+{
+    NSArray *array = [[NSArray alloc] init];
+    NSString *correctString = @"";
+    
     STAssertEqualObjects([array toLog], correctString, @"String should be the same");
 }
 

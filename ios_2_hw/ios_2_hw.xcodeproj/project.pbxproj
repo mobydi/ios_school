@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09738DFC15D2462100E435A3 /* NSDictionary+ToLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 09738DFB15D2462100E435A3 /* NSDictionary+ToLog.m */; };
+		09738E0015D2466C00E435A3 /* NSDictionary+ToLogTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09738DFF15D2466C00E435A3 /* NSDictionary+ToLogTest.m */; };
 		E530A21015D1AF6800B8A095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530A20F15D1AF6800B8A095 /* Foundation.framework */; };
 		E530A21F15D1AF6800B8A095 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530A21E15D1AF6800B8A095 /* SenTestingKit.framework */; };
 		E530A22115D1AF6800B8A095 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530A22015D1AF6800B8A095 /* UIKit.framework */; };
@@ -41,6 +43,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09738DFA15D2462100E435A3 /* NSDictionary+ToLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ToLog.h"; sourceTree = "<group>"; };
+		09738DFB15D2462100E435A3 /* NSDictionary+ToLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ToLog.m"; sourceTree = "<group>"; };
+		09738DFE15D2466C00E435A3 /* NSDictionary+ToLogTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ToLogTest.h"; sourceTree = "<group>"; };
+		09738DFF15D2466C00E435A3 /* NSDictionary+ToLogTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ToLogTest.m"; sourceTree = "<group>"; };
 		E530A20C15D1AF6800B8A095 /* libios_2_hw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libios_2_hw.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E530A20F15D1AF6800B8A095 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E530A21315D1AF6800B8A095 /* ios_2_hw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_2_hw-Prefix.pch"; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 				E530A21215D1AF6800B8A095 /* Supporting Files */,
 				E530A23715D1AFBC00B8A095 /* NSArray+ToLog.h */,
 				E530A23815D1AFBC00B8A095 /* NSArray+ToLog.m */,
+				09738DFA15D2462100E435A3 /* NSDictionary+ToLog.h */,
+				09738DFB15D2462100E435A3 /* NSDictionary+ToLog.m */,
 			);
 			path = ios_2_hw;
 			sourceTree = "<group>";
@@ -131,6 +139,8 @@
 				E530A22715D1AF6800B8A095 /* Supporting Files */,
 				E530A23B15D1B6DC00B8A095 /* NSArray+ToLogTest.h */,
 				E530A23C15D1B6DC00B8A095 /* NSArray+ToLogTest.m */,
+				09738DFE15D2466C00E435A3 /* NSDictionary+ToLogTest.h */,
+				09738DFF15D2466C00E435A3 /* NSDictionary+ToLogTest.m */,
 			);
 			path = ios_2_hwTests;
 			sourceTree = "<group>";
@@ -243,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E530A23915D1AFBC00B8A095 /* NSArray+ToLog.m in Sources */,
+				09738DFC15D2462100E435A3 /* NSDictionary+ToLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +263,7 @@
 			files = (
 				E530A23A15D1B45000B8A095 /* NSArray+ToLog.m in Sources */,
 				E530A23D15D1B6DC00B8A095 /* NSArray+ToLogTest.m in Sources */,
+				09738E0015D2466C00E435A3 /* NSDictionary+ToLogTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +410,7 @@
 				E530A23315D1AF6800B8A095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E530A23415D1AF6800B8A095 /* Build configuration list for PBXNativeTarget "ios_2_hwTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +419,7 @@
 				E530A23615D1AF6800B8A095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

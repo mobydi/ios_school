@@ -1,0 +1,7 @@
+platform :ios
+
+dependency 'RestKit', '0.10.1'
+dependency 'Reachability', '3.0.0'
+dependency 'SSPullToRefresh', '1.0.1'
+dependency 'BlocksKit', '1.5.1'
+dependency 'PrettyKit', '0.2.0'

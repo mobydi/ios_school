@@ -27,6 +27,7 @@
 -(void)layoutSubviews
 {
     CAGradientLayer *layer = [CAGradientLayer layer];
+    layer.name = @"my layer";
     layer.frame = self.bounds;
     layer.colors = [NSArray arrayWithObjects:
                     (id)[UIColor blueColor].CGColor, (id)[UIColor redColor].CGColor, nil];

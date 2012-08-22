@@ -8,14 +8,14 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>{
+@interface MainTableViewController ()<UITableViewDataSource, UITableViewDelegate>{
     
 }
 @property (nonatomic, readonly) UITableView *tableView;
 @property (nonatomic, readonly) NSArray *items;
 @end
 
-@implementation ViewController
+@implementation MainTableViewController
 @synthesize items = _items;
 
 - (void)viewDidLoad

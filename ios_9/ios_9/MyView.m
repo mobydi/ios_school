@@ -33,13 +33,12 @@
     UITouch *touch = [touches anyObject];
     if(touch.tapCount == 2) {
         [self setRandomColor];
-    } else if (touch.tapCount == 1) {
-        CGPoint curr = [touch locationInView:self.superview];
-        CGPoint prev = [touch previousLocationInView:self.superview];
-        CGFloat dX = curr.x - prev.x;
-        CGFloat dY = curr.y - prev.y;
+    } else if (touch.phase == UITouchPhaseEnded && [[event allTouches] count] == 1) {
         
-        self.center = CGPointMake(self.center.x + dX, self.center.y + dY);
+        CGAffineTransform currentTransform = self.transform;
+        CGPoint newCenter = CGPointApplyAffineTransform(self.center, currentTransform);
+        self.transform = CGAffineTransformIdentity;
+        self.center = newCenter;
     }
 }
 

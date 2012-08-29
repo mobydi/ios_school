@@ -2,7 +2,7 @@
 //  Event.m
 //  Locations
 //
-//  Created by ilya on 25.08.12.
+//  Created by Yuriy Buyanov on 8/25/12.
 //
 //
 
@@ -16,5 +16,20 @@
 @dynamic longitude;
 @dynamic creationDate;
 @dynamic user;
+
+#pragma mark -
+#pragma mark MKAnnotation
+
+- (CLLocationCoordinate2D)coordinate {
+    return CLLocationCoordinate2DMake(self.latitude, self.longitude);
+}
+
+- (NSString *)title {
+    return [[NSDate dateWithTimeIntervalSinceReferenceDate:self.creationDate] description];
+}
+
+- (NSString*)subtitle {
+    return self.user.name;
+}
 
 @end

@@ -94,6 +94,10 @@
     }
 }
 
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 
 #pragma mark -
 #pragma mark Saving
@@ -139,10 +143,9 @@
  */
 - (NSManagedObjectModel *)managedObjectModel {
 	
-    if (managedObjectModel != nil) {
-        return managedObjectModel;
+    if (!managedObjectModel) {
+        managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
     }
-    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
     return managedObjectModel;
 }
 
@@ -158,6 +161,8 @@
     }
 	
     NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"Locations.sqlite"]];
+    
+    NSLog(@"db path: %@", storeUrl);
 	
 	NSError *error;
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];

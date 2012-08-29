@@ -2,20 +2,21 @@
 //  Event.h
 //  Locations
 //
-//  Created by ilya on 25.08.12.
+//  Created by Yuriy Buyanov on 8/25/12.
 //
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <MapKit/MapKit.h>
 
 @class User;
 
-@interface Event : NSManagedObject
+@interface Event : NSManagedObject<MKAnnotation>
 
-@property (nonatomic, retain) NSNumber * latitude;
-@property (nonatomic, retain) NSNumber * longitude;
-@property (nonatomic, retain) NSDate * creationDate;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) NSTimeInterval creationDate;
 @property (nonatomic, retain) User *user;
 
 @end

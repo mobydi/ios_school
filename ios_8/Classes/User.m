@@ -2,7 +2,7 @@
 //  User.m
 //  Locations
 //
-//  Created by ilya on 25.08.12.
+//  Created by Yuriy Buyanov on 8/25/12.
 //
 //
 

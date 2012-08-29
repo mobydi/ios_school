@@ -51,16 +51,16 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-@interface RootViewController : UITableViewController <CLLocationManagerDelegate> {
+@interface RootViewController : UITableViewController <CLLocationManagerDelegate, UIAlertViewDelegate> {
 	
-    NSMutableArray *eventsArray;
+    NSMutableArray *usersArray;
 	NSManagedObjectContext *managedObjectContext;	    
 
     CLLocationManager *locationManager;
     UIBarButtonItem *addButton;
 }
 
-@property (nonatomic, retain) NSMutableArray *eventsArray;
+@property (nonatomic, retain) NSMutableArray *usersArray;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;	    
 
 @property (nonatomic, retain) CLLocationManager *locationManager;

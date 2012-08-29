@@ -24,9 +24,13 @@
 		28A9E88C0F43C7410016529B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A9E88B0F43C7410016529B /* CoreData.framework */; };
 		28A9E8BA0F43C7B50016529B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A9E8B90F43C7B50016529B /* CoreLocation.framework */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
-		E5BF492115E8C03500987365 /* Locations2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5BF491E15E8C03500987365 /* Locations2.xcdatamodeld */; };
-		E5BF492A15E8C38B00987365 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BF492915E8C38B00987365 /* Event.m */; };
-		E5BF492D15E8C39700987365 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BF492C15E8C39700987365 /* User.m */; };
+		AA173B9D15E8CDA500BCECFD /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA173B9B15E8CDA400BCECFD /* MapController.m */; };
+		AA173B9E15E8CDA500BCECFD /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA173B9C15E8CDA400BCECFD /* MapController.xib */; };
+		AA173BA115E8CDEC00BCECFD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA173BA015E8CDEC00BCECFD /* MapKit.framework */; };
+		AA173BA315E8DCA400BCECFD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA173BA215E8DCA400BCECFD /* Settings.bundle */; };
+		AAB64F1415E8C26F007DE956 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB64F1315E8C26F007DE956 /* Event.m */; };
+		AAB64F1715E8C282007DE956 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB64F1615E8C282007DE956 /* User.m */; };
+		AAB64F1B15E8C41D007DE956 /* Locations2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAB64F1815E8C41D007DE956 /* Locations2.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,12 +56,17 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		E5BF491F15E8C03500987365 /* Locations 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Locations 2.xcdatamodel"; sourceTree = "<group>"; };
-		E5BF492015E8C03500987365 /* Locations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Locations.xcdatamodel; sourceTree = "<group>"; };
-		E5BF492815E8C38B00987365 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		E5BF492915E8C38B00987365 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		E5BF492B15E8C39700987365 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		E5BF492C15E8C39700987365 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AA173B9A15E8CDA400BCECFD /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		AA173B9B15E8CDA400BCECFD /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		AA173B9C15E8CDA400BCECFD /* MapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
+		AA173BA015E8CDEC00BCECFD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AA173BA215E8DCA400BCECFD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		AAB64F1215E8C26F007DE956 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		AAB64F1315E8C26F007DE956 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		AAB64F1515E8C282007DE956 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AAB64F1615E8C282007DE956 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AAB64F1915E8C41D007DE956 /* Locations 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Locations 2.xcdatamodel"; sourceTree = "<group>"; };
+		AAB64F1A15E8C41D007DE956 /* Locations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Locations.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA173BA115E8CDEC00BCECFD /* MapKit.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
@@ -79,14 +89,17 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E5BF492B15E8C39700987365 /* User.h */,
-				E5BF492C15E8C39700987365 /* User.m */,
-				E5BF492815E8C38B00987365 /* Event.h */,
-				E5BF492915E8C38B00987365 /* Event.m */,
+				AAB64F1515E8C282007DE956 /* User.h */,
+				AAB64F1615E8C282007DE956 /* User.m */,
+				AAB64F1215E8C26F007DE956 /* Event.h */,
+				AAB64F1315E8C26F007DE956 /* Event.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* LocationsAppDelegate.h */,
 				1D3623250D0F684500981E51 /* LocationsAppDelegate.m */,
+				AA173B9A15E8CDA400BCECFD /* MapController.h */,
+				AA173B9B15E8CDA400BCECFD /* MapController.m */,
+				AA173B9C15E8CDA400BCECFD /* MapController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -124,6 +137,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AAB64F1815E8C41D007DE956 /* Locations2.xcdatamodeld */,
 				18AD6C9311D5777C005232E4 /* iTunesArtwork */,
 				1864092F11D1394D00FDB0F5 /* Icon-72.png */,
 				1864093011D1394D00FDB0F5 /* Icon-Small-50.png */,
@@ -133,7 +147,8 @@
 				1864093411D1394D00FDB0F5 /* Icon@2x.png */,
 				182596EF11D13648000B79F7 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				E5BF491E15E8C03500987365 /* Locations2.xcdatamodeld */,
+				AAB64F0C15E8BF94007DE956 /* New Group */,
+				AA173BA215E8DCA400BCECFD /* Settings.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -141,6 +156,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA173BA015E8CDEC00BCECFD /* MapKit.framework */,
 				28A9E8B90F43C7B50016529B /* CoreLocation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -148,6 +164,13 @@
 				28A9E88B0F43C7410016529B /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAB64F0C15E8BF94007DE956 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +232,8 @@
 				1864093A11D1394D00FDB0F5 /* Icon.png in Resources */,
 				1864093B11D1394D00FDB0F5 /* Icon@2x.png in Resources */,
 				18AD6C9411D5777C005232E4 /* iTunesArtwork in Resources */,
+				AA173B9E15E8CDA500BCECFD /* MapController.xib in Resources */,
+				AA173BA315E8DCA400BCECFD /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +247,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* LocationsAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
-				E5BF492115E8C03500987365 /* Locations2.xcdatamodeld in Sources */,
-				E5BF492A15E8C38B00987365 /* Event.m in Sources */,
-				E5BF492D15E8C39700987365 /* User.m in Sources */,
+				AAB64F1415E8C26F007DE956 /* Event.m in Sources */,
+				AAB64F1715E8C282007DE956 /* User.m in Sources */,
+				AAB64F1B15E8C41D007DE956 /* Locations2.xcdatamodeld in Sources */,
+				AA173B9D15E8CDA500BCECFD /* MapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +302,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
@@ -291,7 +317,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
 			};
@@ -321,13 +347,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E5BF491E15E8C03500987365 /* Locations2.xcdatamodeld */ = {
+		AAB64F1815E8C41D007DE956 /* Locations2.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E5BF491F15E8C03500987365 /* Locations 2.xcdatamodel */,
-				E5BF492015E8C03500987365 /* Locations.xcdatamodel */,
+				AAB64F1915E8C41D007DE956 /* Locations 2.xcdatamodel */,
+				AAB64F1A15E8C41D007DE956 /* Locations.xcdatamodel */,
 			);
-			currentVersion = E5BF491F15E8C03500987365 /* Locations 2.xcdatamodel */;
+			currentVersion = AAB64F1915E8C41D007DE956 /* Locations 2.xcdatamodel */;
 			path = Locations2.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

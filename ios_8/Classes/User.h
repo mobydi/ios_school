@@ -2,7 +2,7 @@
 //  User.h
 //  Locations
 //
-//  Created by ilya on 25.08.12.
+//  Created by Yuriy Buyanov on 8/25/12.
 //
 //
 
@@ -14,6 +14,14 @@
 @interface User : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) Event *events;
+@property (nonatomic, retain) NSSet *events;
+@end
+
+@interface User (CoreDataGeneratedAccessors)
+
+- (void)addEventsObject:(Event *)value;
+- (void)removeEventsObject:(Event *)value;
+- (void)addEvents:(NSSet *)values;
+- (void)removeEvents:(NSSet *)values;
 
 @end

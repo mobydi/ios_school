@@ -27,6 +27,33 @@
     [super viewDidUnload];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self becomeFirstResponder];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self resignFirstResponder];
+}
+
+-(BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+-(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    static int numberOfTime =0;
+    
+    if(motion == UIEventSubtypeMotionShake) {
+        self.view.backgroundColor = (numberOfTime & 1) ? [UIColor redColor] : [UIColor blueColor];
+        numberOfTime++;
+    }
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
@@ -57,6 +84,21 @@
     }
 }
 - (IBAction)pinchOccured:(UIPinchGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateChanged) {
+        CGFloat scale = sender.scale;
+        self.ourView.transform = CGAffineTransformMakeScale(scale, scale);
+        
+    } else if (sender.state == UIGestureRecognizerStateEnded){
+        CGFloat scale = sender.scale;
+        CGPoint center = sender.view.center;
+        CGRect newFrame = CGRectMake(0.0f, 0.0f, sender.view.bounds.size.width * scale, sender.view.bounds.size.height *scale);
+        self.ourView.transform = CGAffineTransformIdentity;
+        self.ourView.frame = newFrame;
+        self.ourView.center = center;
+        
+    } else if (sender.state == UIGestureRecognizerStateFailed || sender.state == UIGestureRecognizerStateCancelled) {
+        self.view.transform =CGAffineTransformIdentity;
+    }
 }
 
 - (void)dealloc {
